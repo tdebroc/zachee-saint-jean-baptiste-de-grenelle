@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcours Zachée — Saint Jean Baptiste de Grenelle</title>
+  <meta name="description" content="Le Parcours Zachée : un chemin de (trans)formation pour unifier foi, travail et vie sociale. Paroisse Saint Jean Baptiste de Grenelle. Présentation les 14 et 21 septembre 2026." />
+  <meta name="theme-color" content="#233524" />
+
+  <meta property="og:title" content="Parcours Zachée — Saint Jean Baptiste de Grenelle" />
+  <meta property="og:description" content="Apprendre à vivre en chrétien au quotidien pour unifier foi, travail et vie sociale." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#accueil" class="nav__brand" aria-label="Parcours Zachée — accueil">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21V11" />
+            <path d="M12 11c0-3 2-4 2-6.5C14 3 13 2 12 2S10 3 10 4.5C10 7 12 8 12 11Z" />
+            <path d="M12 13c-.5-1.6-2-2.4-3.6-2.2M12 15c.6-1.6 2.2-2.3 3.8-1.9" />
+          </svg>
+        </span>
+        <span class="nav__name">Zachée<em>SJBG</em></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navigation principale">
+        <a href="#presentation">Le parcours</a>
+        <a href="#public">Pour qui&nbsp;?</a>
+        <a href="#themes">Les 8 thèmes</a>
+        <a href="#calendrier">Calendrier</a>
+        <a href="#temoignage">Témoignage</a>
+        <a href="#contact" class="nav__cta">S'inscrire</a>
+      </nav>
+
+      <button class="nav__burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <svg class="hero__tree" viewBox="0 0 600 700" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+          <defs>
+            <linearGradient id="leafGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3f6142" />
+              <stop offset="1" stop-color="#1f3322" />
+            </linearGradient>
+          </defs>
+          <path class="tree-trunk" d="M300 700 L300 360" />
+          <path class="tree-branch" d="M300 470 C250 440 220 400 205 360" />
+          <path class="tree-branch" d="M300 440 C350 415 385 380 402 345" />
+          <path class="tree-branch" d="M300 520 C260 505 235 480 222 452" />
+          <ellipse class="tree-canopy" cx="300" cy="300" rx="185" ry="150" fill="url(#leafGrad)" />
+          <ellipse class="tree-canopy tree-canopy--2" cx="200" cy="330" rx="105" ry="92" fill="url(#leafGrad)" />
+          <ellipse class="tree-canopy tree-canopy--3" cx="405" cy="325" rx="115" ry="98" fill="url(#leafGrad)" />
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Paroisse Saint Jean Baptiste de Grenelle</p>
+        <h1 class="hero__title">
+          <span class="reveal" style="--d:.05s">Parcours</span>
+          <span class="hero__title-em reveal" style="--d:.15s">Zachée</span>
+        </h1>
+        <p class="hero__lead reveal" style="--d:.28s">
+          Un chemin de (trans)formation pour apprendre à vivre en chrétien au quotidien
+          et unifier <em>foi</em>, <em>travail</em> et <em>vie sociale</em>.
+        </p>
+        <div class="hero__actions reveal" style="--d:.4s">
+          <a href="#contact" class="btn btn--primary">Je m'inscris</a>
+          <a href="#presentation" class="btn btn--ghost">Découvrir le parcours</a>
+        </div>
+        <div class="hero__meta reveal" style="--d:.52s">
+          <div class="hero__meta-item">
+            <span class="hero__meta-k">Présentations</span>
+            <span class="hero__meta-v">14 &amp; 21 septembre 2026 · 20h30</span>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-k">Lieu</span>
+            <span class="hero__meta-v">Grenelle Jeunes · 4 quater passage des Écoliers</span>
+          </div>
+          <div class="hero__meta-item hero__meta-item--tag">
+            <span class="hero__tag">Ouvert à tous</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#presentation" class="hero__scroll" aria-label="Défiler">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- VERSET -->
+    <section class="verse" aria-label="Évangile">
+      <div class="verse__inner">
+        <p class="verse__text reveal">
+          «&nbsp;Zachée, descends vite&nbsp;: <span>aujourd'hui il faut que j'aille demeurer dans ta maison.</span>&nbsp;»
+        </p>
+        <p class="verse__ref reveal" style="--d:.15s">Évangile selon saint Luc, 19</p>
+      </div>
+    </section>
+
+    <!-- PRESENTATION -->
+    <section class="section" id="presentation">
+      <div class="section__head">
+        <span class="kicker reveal">Le parcours</span>
+        <h2 class="reveal" style="--d:.08s">Qu'est-ce que le Parcours Zachée&nbsp;?</h2>
+      </div>
+      <div class="prose-grid">
+        <div class="prose reveal">
+          <p>
+            Le Parcours Zachée est un parcours de <strong>(trans)formation</strong> pour apprendre
+            à vivre en chrétien au quotidien afin d'unifier foi, travail et vie sociale.
+          </p>
+          <p>
+            Son contenu s'appuie sur la <strong>doctrine sociale de l'Église</strong>, qui n'est
+            autre que la Parole de Dieu actualisée pour notre société. Grâce à une pédagogie
+            concrète et accessible à tous, il donne des clés pour réaliser un véritable
+            art de vivre chrétien.
+          </p>
+        </div>
+        <aside class="facts reveal" style="--d:.12s">
+          <div class="fact">
+            <span class="fact__num" data-count="8">8</span>
+            <span class="fact__label">mois de cheminement</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num" data-count="2">2</span>
+            <span class="fact__label">soirées par mois, le lundi</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num" data-count="8">8</span>
+            <span class="fact__label">thèmes : boussole &amp; compas</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num" data-count="6">6</span>
+            <span class="fact__label">à 8 personnes par équipe</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PUBLIC -->
+    <section class="section section--tint" id="public">
+      <div class="section__head">
+        <span class="kicker reveal">Pour qui&nbsp;?</span>
+        <h2 class="reveal" style="--d:.08s">À qui s'adresse le parcours&nbsp;?</h2>
+        <p class="section__intro reveal" style="--d:.14s">
+          À tout chrétien, quel que soit son état de vie, qui cherche à avancer vers le Seigneur
+          et à faire le lien entre sa vie de foi et sa vie dans le monde.
+        </p>
+      </div>
+      <ul class="chips">
+        <li class="chip reveal">Célibataire</li>
+        <li class="chip reveal" style="--d:.04s">Marié</li>
+        <li class="chip reveal" style="--d:.08s">Actif</li>
+        <li class="chip reveal" style="--d:.12s">Retraité</li>
+        <li class="chip reveal" style="--d:.16s">Sans enfant</li>
+        <li class="chip reveal" style="--d:.2s">Parent</li>
+        <li class="chip reveal" style="--d:.24s">Grand-parent</li>
+      </ul>
+    </section>
+
+    <!-- FONCTIONNEMENT -->
+    <section class="section" id="fonctionnement">
+      <div class="section__head">
+        <span class="kicker reveal">Comment ça marche&nbsp;?</span>
+        <h2 class="reveal" style="--d:.08s">Riche, varié et vivant</h2>
+        <p class="section__intro reveal" style="--d:.14s">
+          Le parcours se déroule sur une année scolaire, à raison de deux soirées par mois
+          pendant huit mois, en alternant quatre temps forts.
+        </p>
+      </div>
+      <div class="pillars">
+        <article class="pillar reveal">
+          <span class="pillar__ic">✦</span>
+          <h3>Enseignements</h3>
+          <p>Des repères clairs, fondés sur l'Évangile et la doctrine sociale de l'Église.</p>
+        </article>
+        <article class="pillar reveal" style="--d:.08s">
+          <span class="pillar__ic">◇</span>
+          <h3>Exercices personnels</h3>
+          <p>Des mises en pratique concrètes pour ancrer le parcours dans votre quotidien.</p>
+        </article>
+        <article class="pillar reveal" style="--d:.16s">
+          <span class="pillar__ic">❊</span>
+          <h3>Partage en équipe</h3>
+          <p>Des échanges fraternels au sein d'un groupe de 6 à 8 personnes.</p>
+        </article>
+        <article class="pillar reveal" style="--d:.24s">
+          <span class="pillar__ic">☩</span>
+          <h3>Temps de prière</h3>
+          <p>Des temps priants et conviviaux pour nourrir la relation au Seigneur.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- THEMES : boussole & compas -->
+    <section class="section section--dark" id="themes">
+      <div class="section__head">
+        <span class="kicker kicker--light reveal">Le contenu</span>
+        <h2 class="reveal" style="--d:.08s">La boussole &amp; le compas</h2>
+        <p class="section__intro section__intro--light reveal" style="--d:.14s">
+          Huit thèmes en deux parties&nbsp;: quatre points cardinaux pour s'orienter dans le monde,
+          puis quatre repères pour mesurer nos relations et notre place dans la société.
+        </p>
+      </div>
+
+      <div class="instruments">
+        <div class="instrument reveal">
+          <div class="instrument__head">
+            <span class="instrument__badge">La boussole</span>
+            <p class="instrument__sub">4 points cardinaux pour s'orienter dans le monde</p>
+          </div>
+          <ol class="theme-list">
+            <li class="theme"><span class="theme__no">1</span><span class="theme__t">Acteurs de la création</span></li>
+            <li class="theme"><span class="theme__no">2</span><span class="theme__t">Servir le bien commun</span></li>
+            <li class="theme"><span class="theme__no">3</span><span class="theme__t">Un usage juste de la propriété</span></li>
+            <li class="theme"><span class="theme__no">4</span><span class="theme__t">Une option préférentielle pour les pauvres</span></li>
+          </ol>
+        </div>
+
+        <div class="instrument reveal" style="--d:.12s">
+          <div class="instrument__head">
+            <span class="instrument__badge instrument__badge--alt">Le compas</span>
+            <p class="instrument__sub">Pour mesurer nos relations et notre place dans la société</p>
+          </div>
+          <ol class="theme-list" start="5">
+            <li class="theme"><span class="theme__no">5</span><span class="theme__t">Exercer l'autorité</span></li>
+            <li class="theme"><span class="theme__no">6</span><span class="theme__t">Participer à la communauté</span></li>
+            <li class="theme"><span class="theme__no">7</span><span class="theme__t">Unité et liberté</span></li>
+            <li class="theme"><span class="theme__no">8</span><span class="theme__t">Un art de vivre chrétien</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDRIER -->
+    <section class="section" id="calendrier">
+      <div class="section__head">
+        <span class="kicker reveal">Année 2026 — 2027</span>
+        <h2 class="reveal" style="--d:.08s">Le calendrier des rencontres</h2>
+        <p class="section__intro reveal" style="--d:.14s">
+          De septembre à juin, hors vacances scolaires. Deux temps forts&nbsp;: une journée bilan
+          et un pèlerinage au Sacré-Cœur.
+        </p>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline__line" aria-hidden="true"></div>
+        <ol class="timeline__list">
+          <li class="tl reveal"><span class="tl__dot"></span><time>14 sept.</time><p>Soirée de présentation</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>21 sept.</time><p>Soirée de présentation</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>28 sept.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>12 oct.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>2 nov.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>16 nov.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>30 nov.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>14 déc.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>4 janv.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>18 janv.</time><p>Rencontre</p></li>
+          <li class="tl tl--highlight reveal"><span class="tl__dot"></span><time>Sam. 30 janv.</time><p>Journée complète · Bilan</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>1er févr.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>22 févr.</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>8 mars</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>22 mars</time><p>Rencontre</p></li>
+          <li class="tl tl--highlight reveal"><span class="tl__dot"></span><time>Sam. 3 avril</time><p>Journée complète · Pèlerinage au Sacré-Cœur</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>19 avril</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>3 mai</time><p>Rencontre</p></li>
+          <li class="tl tl--highlight reveal"><span class="tl__dot"></span><time>6 — 9 mai</time><p>Forum Zachée à Paray-le-Monial</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>24 mai</time><p>Rencontre</p></li>
+          <li class="tl reveal"><span class="tl__dot"></span><time>7 juin</time><p>Rencontre · clôture</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TEMOIGNAGE -->
+    <section class="section section--tint" id="temoignage">
+      <div class="section__head">
+        <span class="kicker reveal">Témoignage</span>
+        <h2 class="reveal" style="--d:.08s">Avancer sur votre chemin vers Dieu</h2>
+      </div>
+      <figure class="testimony reveal">
+        <blockquote class="testimony__body">
+          <p>
+            Nous connaissons tous le personnage de Zachée, perché sur son arbre, et Jésus
+            qui s'invite chez lui. Toutefois, l'essentiel se situe en amont&nbsp;: Zachée
+            <strong>voulait voir</strong> notre Seigneur. Pour cela, il s'est rendu sur la route
+            où Jésus devait passer. Ne se laissant arrêter ni par la foule ni par sa petite
+            taille, il escalada un arbre. Il a fait preuve de <strong>volonté et de persévérance</strong>.
+          </p>
+          <p>
+            Deux mille ans plus tard, ce beau récit est toujours d'actualité. Le Seigneur nous
+            attend&nbsp;; pour aller à sa rencontre, il faut en avoir envie, se mettre sur son
+            chemin et se préparer à surmonter les difficultés immédiates. En nous faisant
+            progresser vers l'unité entre vie de foi et vie dans le monde, le parcours Zachée
+            nous ouvre la voie.
+          </p>
+        </blockquote>
+        <figcaption class="testimony__by">
+          <span class="testimony__name">Christian Planes</span>
+          <span class="testimony__role">Responsable du Parcours Zachée</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--cta" id="contact">
+      <div class="cta">
+        <div class="cta__glow" aria-hidden="true"></div>
+        <span class="kicker kicker--light reveal">Inscription &amp; contact</span>
+        <h2 class="reveal" style="--d:.08s">Prêt à monter dans le sycomore&nbsp;?</h2>
+        <p class="cta__lead reveal" style="--d:.14s">
+          Rejoignez-nous aux soirées de présentation des <strong>14 et 21 septembre 2026</strong>,
+          de 20h30 à 22h00, au Grenelle Jeunes.
+        </p>
+        <div class="cta__actions reveal" style="--d:.2s">
+          <a href="mailto:zachee.paris.sud@gmail.com?subject=Inscription%20Parcours%20Zach%C3%A9e%20SJBG" class="btn btn--primary btn--lg">
+            zachee.paris.sud@gmail.com
+          </a>
+        </div>
+        <p class="cta__place reveal" style="--d:.26s">
+          Grenelle Jeunes — 4 quater passage des Écoliers, Paris
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__name">Zachée<em>SJBG</em></span>
+        <p>Parcours Zachée · Paroisse Saint Jean Baptiste de Grenelle</p>
+      </div>
+      <nav class="footer__nav" aria-label="Pied de page">
+        <a href="#presentation">Le parcours</a>
+        <a href="#themes">Les 8 thèmes</a>
+        <a href="#calendrier">Calendrier</a>
+        <a href="#contact">Inscription</a>
+      </nav>
+      <p class="footer__note">
+        Parcours élaboré en 2006 par une équipe de la Communauté de l'Emmanuel.
+      </p>
+    </div>
+    <p class="footer__copy">© 2026 · Parcours Zachée — SJBG</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
