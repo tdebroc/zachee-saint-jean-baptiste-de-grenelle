@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --green-900:#152618; --green-800:#1d3020; --green-700:#2d4530; --green-600:#3f6142;
+    --green-300:#9db79f; --cream:#f6f1e7; --gold:#c19a3e; --gold-soft:#e0c079; --terra:#c06a41;
+    --serif:"Cormorant Garamond",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1080px;}
+  body{
+    font-family:var(--sans);
+    background:radial-gradient(120% 90% at 50% -10%, #24402a 0%, var(--green-800) 45%, var(--green-900) 100%);
+    color:var(--cream);
+    position:relative;overflow:hidden;
+    display:flex;flex-direction:column;align-items:center;
+    padding:58px 84px;text-align:center;
+  }
+  /* decorative glow */
+  .glow{position:absolute;top:-260px;left:50%;transform:translateX(-50%);width:900px;height:900px;
+    background:radial-gradient(circle, rgba(224,192,121,.30), rgba(224,192,121,0) 60%);}
+  /* sycomore silhouette */
+  .tree{position:absolute;right:-120px;bottom:-140px;width:640px;opacity:.10;}
+  .tree2{position:absolute;left:-160px;top:-120px;width:460px;opacity:.07;transform:scaleX(-1);}
+  .frame{position:absolute;inset:34px;border:1.5px solid rgba(224,192,121,.34);border-radius:34px;pointer-events:none;}
+  .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;height:100%;width:100%;justify-content:space-between;}
+
+  .top{display:flex;flex-direction:column;align-items:center;gap:20px;}
+  .parish{display:flex;align-items:center;gap:14px;}
+  .parish img{width:46px;height:46px;object-fit:contain;background:#fff;border-radius:50%;padding:6px;}
+  .parish span{font-size:17px;letter-spacing:3px;text-transform:uppercase;color:var(--green-300);font-weight:500;}
+
+  .logo{background:#fff;border-radius:22px;padding:22px 36px;box-shadow:0 30px 70px -30px rgba(0,0,0,.6);}
+  .logo img{width:270px;display:block;}
+
+  .mid{display:flex;flex-direction:column;align-items:center;}
+  .eyebrow{display:inline-block;font-size:16px;letter-spacing:5px;text-transform:uppercase;font-weight:600;
+    color:var(--green-900);background:var(--gold-soft);padding:9px 22px;border-radius:999px;margin-bottom:26px;}
+  h1{font-family:var(--serif);font-weight:600;font-size:104px;line-height:.9;letter-spacing:-1px;}
+  h1 em{font-style:italic;display:block;
+    background:linear-gradient(100deg,var(--gold-soft),var(--terra) 70%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .subtitle{font-family:var(--serif);font-style:italic;font-size:40px;color:var(--cream);margin-top:14px;}
+
+  .dates{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:6px;}
+  .dates .day{font-family:var(--serif);font-weight:600;font-size:62px;color:var(--gold-soft);line-height:1.05;}
+  .dates .hour{font-size:22px;letter-spacing:4px;text-transform:uppercase;color:var(--cream);font-weight:500;}
+
+  .place{font-size:22px;color:var(--green-300);margin-top:20px;line-height:1.5;}
+  .place strong{color:var(--cream);font-weight:600;}
+  .cta{margin-top:18px;font-family:var(--serif);font-style:italic;font-size:34px;color:var(--gold-soft);}
+  .divider{width:70px;height:3px;background:var(--gold);border-radius:3px;margin:22px auto 0;}
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <svg class="tree" viewBox="0 0 600 700"><g fill="#dcecd8"><ellipse cx="300" cy="300" rx="185" ry="150"/><ellipse cx="200" cy="330" rx="105" ry="92"/><ellipse cx="405" cy="325" rx="115" ry="98"/></g><path d="M300 700 L300 360" stroke="#dcecd8" stroke-width="12" stroke-linecap="round"/></svg>
+  <svg class="tree2" viewBox="0 0 600 700"><g fill="#dcecd8"><ellipse cx="300" cy="300" rx="185" ry="150"/><ellipse cx="200" cy="330" rx="105" ry="92"/><ellipse cx="405" cy="325" rx="115" ry="98"/></g><path d="M300 700 L300 360" stroke="#dcecd8" stroke-width="12" stroke-linecap="round"/></svg>
+  <div class="frame"></div>
+
+  <div class="content">
+    <div class="top">
+      <div class="parish">
+        <img src="../assets/logo-sjbg.png" alt="" />
+        <span>Saint Jean Baptiste de Grenelle</span>
+      </div>
+      <div class="logo"><img src="../assets/logo-zachee.jpg" alt="Parcours Zachée" /></div>
+    </div>
+
+    <div class="mid">
+      <span class="eyebrow">Ouvert à tous</span>
+      <h1>Parcours<em>Zachée</em></h1>
+      <p class="subtitle">Soirées de présentation</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="mid">
+      <div class="dates">
+        <span class="day">Lundi 14 &amp; Lundi 21 septembre 2026</span>
+        <span class="hour">20h30 — 22h00</span>
+      </div>
+      <p class="place"><strong>Grenelle Jeunes</strong><br/>4 quater passage des Écoliers, Paris</p>
+      <p class="cta">Venez comme vous êtes.</p>
+    </div>
+  </div>
+</body>
+</html>

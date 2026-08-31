@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --green-900:#152618; --green-800:#1d3020; --green-700:#2d4530; --green-600:#3f6142;
+    --green-300:#9db79f; --cream:#f6f1e7; --cream-2:#efe7d7; --paper:#fbf8f1;
+    --ink:#24281f; --ink-soft:#4c5347; --gold:#c19a3e; --gold-soft:#d9b96a; --terra:#b5623c;
+    --serif:"Cormorant Garamond",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1080px;}
+  body{
+    font-family:var(--sans);
+    background:radial-gradient(120% 80% at 50% 0%, #fefcf7 0%, var(--cream) 55%, var(--cream-2) 100%);
+    color:var(--ink);
+    position:relative;overflow:hidden;
+    display:flex;flex-direction:column;align-items:center;justify-content:space-between;
+    padding:80px 86px;text-align:center;
+  }
+  .glow{position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:820px;height:820px;
+    background:radial-gradient(circle, rgba(217,185,106,.30), rgba(217,185,106,0) 62%);}
+  .tree{position:absolute;right:-140px;bottom:-150px;width:620px;opacity:.14;}
+  .frame{position:absolute;inset:34px;border:1.5px solid rgba(45,69,48,.2);border-radius:34px;pointer-events:none;}
+  .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;height:100%;width:100%;justify-content:space-between;}
+
+  .kicker{font-size:16px;letter-spacing:5px;text-transform:uppercase;font-weight:600;color:var(--terra);}
+  .verse{font-family:var(--serif);font-style:italic;font-size:40px;line-height:1.4;color:var(--green-700);max-width:720px;margin-top:16px;}
+  .verse .ref{display:block;font-style:normal;font-family:var(--sans);font-size:15px;letter-spacing:3px;
+    text-transform:uppercase;color:var(--gold);margin-top:16px;}
+
+  .mid{display:flex;flex-direction:column;align-items:center;}
+  h1{font-family:var(--serif);font-weight:600;font-size:82px;line-height:1.02;letter-spacing:-1px;color:var(--green-900);max-width:840px;}
+  h1 em{font-style:italic;
+    background:linear-gradient(100deg,var(--gold),var(--terra) 70%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .lead{font-size:26px;color:var(--ink-soft);margin-top:22px;max-width:640px;line-height:1.5;}
+  .lead strong{color:var(--green-800);font-weight:600;}
+
+  .datecard{display:inline-flex;align-items:center;gap:26px;background:var(--green-800);color:var(--cream);
+    padding:26px 44px;border-radius:22px;margin-top:34px;box-shadow:0 30px 60px -30px rgba(24,42,27,.6);}
+  .datecard .lbl{font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--gold-soft);text-align:left;}
+  .datecard .val{font-family:var(--serif);font-weight:600;font-size:40px;line-height:1.05;text-align:left;}
+  .datecard .sep{width:1px;height:56px;background:rgba(224,192,121,.4);}
+
+  .bottom{display:flex;flex-direction:column;align-items:center;gap:20px;}
+  .logos{display:flex;align-items:center;gap:20px;}
+  .logos .chip{background:#fff;border-radius:16px;padding:12px 18px;box-shadow:0 14px 34px -20px rgba(24,42,27,.5);display:grid;place-items:center;}
+  .logos .chip img{display:block;object-fit:contain;}
+  .contact{font-size:19px;color:var(--ink-soft);}
+  .contact strong{color:var(--terra);}
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <svg class="tree" viewBox="0 0 600 700"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f6142"/><stop offset="1" stop-color="#1f3322"/></linearGradient></defs><g fill="url(#g)"><ellipse cx="300" cy="300" rx="185" ry="150"/><ellipse cx="200" cy="330" rx="105" ry="92"/><ellipse cx="405" cy="325" rx="115" ry="98"/></g><path d="M300 700 L300 360" stroke="#223524" stroke-width="12" stroke-linecap="round"/></svg>
+  <div class="frame"></div>
+
+  <div class="content">
+    <div class="mid">
+      <span class="kicker">Parcours Zachée · SJBG</span>
+      <p class="verse">«&nbsp;Zachée, descends vite&nbsp;: aujourd'hui il faut que j'aille demeurer dans ta maison.&nbsp;»
+        <span class="ref">Évangile selon saint Luc, 19</span></p>
+    </div>
+
+    <div class="mid">
+      <h1>Et si vous montiez dans le <em>sycomore</em>&nbsp;?</h1>
+      <p class="lead">Venez découvrir le Parcours Zachée à l'une des <strong>deux soirées de présentation</strong>.</p>
+      <div class="datecard">
+        <div>
+          <div class="lbl">Présentations</div>
+          <div class="val">Lun. 14 &amp; Lun. 21 sept. 2026</div>
+        </div>
+        <div class="sep"></div>
+        <div>
+          <div class="lbl">Horaire</div>
+          <div class="val">20h30 · Grenelle Jeunes</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="logos">
+        <span class="chip"><img src="../assets/logo-sjbg.png" width="52" height="63" alt="" /></span>
+        <span class="chip"><img src="../assets/logo-zachee.jpg" width="108" height="72" alt="" /></span>
+      </div>
+      <p class="contact">Inscription &amp; contact&nbsp;: <strong>zachee.paris.sud@gmail.com</strong></p>
+    </div>
+  </div>
+</body>
+</html>
